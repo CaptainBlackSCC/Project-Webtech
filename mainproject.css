@@ -1,0 +1,35 @@
+body
+{
+  background-image: url(cake.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  font-weight: bold;
+  font-style: italic;
+}
+
+li
+{
+  display: inline;
+}
+
+li1{
+  padding: 8px;
+  background-color: green;
+}
+li2{
+  padding: 8px;
+  background-color: red;
+}
+li3{
+  padding: 8px;
+  background-color: yellow;
+}
+p{
+  position: static;
+  text-align: left;
+}
+button{
+  color: pink;
+}

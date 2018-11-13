@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="recipeproject.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+  <h1>Recipe</h1>
+  <br>
+  <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'main')"> <a href="main.html">Home</a></button>
+  <button class="tablinks" onclick="openCity(event, 'recipe')"> <a href="recipe.html">Recipe</a></button>
+  <button class="tablinks" onclick="openCity(event, 'comment')"> <a href="comment.html">Comment</a></button>
+  </div>
+
+
+<button class="accordion">Cheese Cake</button>
+<div class="panel">
+  <p>This is our special recipe of Cheesecake that are originated from my late late grandmother and I want to share with all of you our recipe.</p>
+  <a href="CC1.html">Strawberry CheeseCake</a><br>
+  <a href="CC2.html">Banana Cheesecake with Caramel Sauce</a><br>
+</div>
+
+<button class="accordion">Brownies</button>
+<div class="panel">
+  <p>Keep Calm and Bake Brownies</p>
+  <a href="Br1.html">Fudges Brownies</a><br>
+  <a href="Br2.html">Brownies Cookies</a>
+</div>
+
+<button class="accordion">Pie</button>
+<div class="panel">
+  <p>A Pie A Day Keeps The Sadness Away</p>
+  <a href="P1.html">Topsy-Turvy Apple Pie</a>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
